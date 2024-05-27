@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02_Nhom", "Lab02_Nhom\Lab02_Nhom.csproj", "{1576639D-E712-41C5-A9FF-DAA0827F8555}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "LabNhom02", "LabNhom02\LabNhom02.vdproj", "{17CD7EB8-4B27-48EF-98E8-80C018DC21F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1576639D-E712-41C5-A9FF-DAA0827F8555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1576639D-E712-41C5-A9FF-DAA0827F8555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1576639D-E712-41C5-A9FF-DAA0827F8555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1576639D-E712-41C5-A9FF-DAA0827F8555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17CD7EB8-4B27-48EF-98E8-80C018DC21F3}.Debug|Any CPU.ActiveCfg = Debug
+		{17CD7EB8-4B27-48EF-98E8-80C018DC21F3}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE6E2AF6-EE83-415E-8657-791416A4BAE9}
+	EndGlobalSection
+EndGlobal

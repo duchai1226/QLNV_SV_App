@@ -1,0 +1,16 @@
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\bin\Debug\Lab02_Nhom.exe.config
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\bin\Debug\Lab02_Nhom.exe
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\bin\Debug\Lab02_Nhom.pdb
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\obj\Debug\Lab02_Nhom.csproj.AssemblyReference.cache
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\obj\Debug\Lab02_Nhom.Form1.resources
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\obj\Debug\Lab02_Nhom.Properties.Resources.resources
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\obj\Debug\Lab02_Nhom.csproj.GenerateResource.cache
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\obj\Debug\Lab02_Nhom.csproj.CoreCompileInputs.cache
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\obj\Debug\Lab02_Nhom.exe
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\obj\Debug\Lab02_Nhom.pdb
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\obj\Debug\Lab02_Nhom.Form2.resources
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\obj\Debug\Lab02_Nhom.QLLH.resources
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\obj\Debug\Lab02_Nhom.QLNV.resources
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\obj\Debug\Lab02_Nhom.ThemLop.resources
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\obj\Debug\Lab02_Nhom.ThemSV.resources
+D:\Project\OPP-C#\Lab02_Nhom\Lab02_Nhom\obj\Debug\Lab02_Nhom.BangDiem.resources
