@@ -52,16 +52,22 @@
             this.button_Thoat = new System.Windows.Forms.Button();
             this.nHANVIENTableAdapter = new Lab02_Nhom.QLSVNhom2DataSetTableAdapters.NHANVIENTableAdapter();
             this.label7 = new System.Windows.Forms.Label();
+            this.qLSVNhom2DataSet8 = new Lab02_Nhom.QLSVNhom2DataSet8();
+            this.nHANVIENBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.nHANVIENTableAdapter1 = new Lab02_Nhom.QLSVNhom2DataSet8TableAdapters.NHANVIENTableAdapter();
             this.mANVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pUBKEYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hOTENDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eMAILDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TENDN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lUONGDataGridViewImageColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVNhom2DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVNhom2DataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -202,14 +208,15 @@
             this.pUBKEYDataGridViewTextBoxColumn,
             this.hOTENDataGridViewTextBoxColumn,
             this.eMAILDataGridViewTextBoxColumn,
+            this.TENDN,
             this.lUONGDataGridViewImageColumn});
-            this.dataGridView1.DataSource = this.nHANVIENBindingSource;
+            this.dataGridView1.DataSource = this.nHANVIENBindingSource1;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 16);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(758, 196);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dataGridView1_CellBeginEdit);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // nHANVIENBindingSource
@@ -276,18 +283,33 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "QUẢN LÝ NHÂN VIÊN";
             // 
+            // qLSVNhom2DataSet8
+            // 
+            this.qLSVNhom2DataSet8.DataSetName = "QLSVNhom2DataSet8";
+            this.qLSVNhom2DataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // nHANVIENBindingSource1
+            // 
+            this.nHANVIENBindingSource1.DataMember = "NHANVIEN";
+            this.nHANVIENBindingSource1.DataSource = this.qLSVNhom2DataSet8;
+            // 
+            // nHANVIENTableAdapter1
+            // 
+            this.nHANVIENTableAdapter1.ClearBeforeFill = true;
+            // 
             // mANVDataGridViewTextBoxColumn
             // 
             this.mANVDataGridViewTextBoxColumn.DataPropertyName = "MANV";
             this.mANVDataGridViewTextBoxColumn.HeaderText = "MANV";
             this.mANVDataGridViewTextBoxColumn.Name = "mANVDataGridViewTextBoxColumn";
-            this.mANVDataGridViewTextBoxColumn.Width = 120;
+            this.mANVDataGridViewTextBoxColumn.Width = 60;
             // 
             // pUBKEYDataGridViewTextBoxColumn
             // 
             this.pUBKEYDataGridViewTextBoxColumn.DataPropertyName = "PUBKEY";
             this.pUBKEYDataGridViewTextBoxColumn.HeaderText = "PUBKEY";
             this.pUBKEYDataGridViewTextBoxColumn.Name = "pUBKEYDataGridViewTextBoxColumn";
+            this.pUBKEYDataGridViewTextBoxColumn.Width = 90;
             // 
             // hOTENDataGridViewTextBoxColumn
             // 
@@ -301,7 +323,14 @@
             this.eMAILDataGridViewTextBoxColumn.DataPropertyName = "EMAIL";
             this.eMAILDataGridViewTextBoxColumn.HeaderText = "EMAIL";
             this.eMAILDataGridViewTextBoxColumn.Name = "eMAILDataGridViewTextBoxColumn";
-            this.eMAILDataGridViewTextBoxColumn.Width = 150;
+            this.eMAILDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // TENDN
+            // 
+            this.TENDN.DataPropertyName = "TENDN";
+            this.TENDN.HeaderText = "TENDN";
+            this.TENDN.Name = "TENDN";
+            this.TENDN.Width = 120;
             // 
             // lUONGDataGridViewImageColumn
             // 
@@ -310,7 +339,7 @@
             this.lUONGDataGridViewImageColumn.Name = "lUONGDataGridViewImageColumn";
             this.lUONGDataGridViewImageColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.lUONGDataGridViewImageColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.lUONGDataGridViewImageColumn.Width = 200;
+            this.lUONGDataGridViewImageColumn.Width = 180;
             // 
             // QLNV
             // 
@@ -333,6 +362,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVNhom2DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVNhom2DataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,10 +394,14 @@
         private System.Windows.Forms.BindingSource nHANVIENBindingSource;
         private QLSVNhom2DataSetTableAdapters.NHANVIENTableAdapter nHANVIENTableAdapter;
         private System.Windows.Forms.Label label7;
+        private QLSVNhom2DataSet8 qLSVNhom2DataSet8;
+        private System.Windows.Forms.BindingSource nHANVIENBindingSource1;
+        private QLSVNhom2DataSet8TableAdapters.NHANVIENTableAdapter nHANVIENTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn mANVDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pUBKEYDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hOTENDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn eMAILDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TENDN;
         private System.Windows.Forms.DataGridViewTextBoxColumn lUONGDataGridViewImageColumn;
     }
 }

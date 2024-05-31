@@ -118,6 +118,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLSVNhom2DataSet7.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLSVNhom2DataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLSVNhom2DataSet8.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RSA512.cs" />
     <Compile Include="ThemLop.cs">
       <SubType>Form</SubType>
@@ -267,6 +272,17 @@
     <None Include="Img\reset-icon-614x460.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLSVNhom2DataSet8.xsc">
+      <DependentUpon>QLSVNhom2DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="QLSVNhom2DataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLSVNhom2DataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLSVNhom2DataSet8.xss">
+      <DependentUpon>QLSVNhom2DataSet8.xsd</DependentUpon>
+    </None>
     <None Include="Resources\5632370.png" />
   </ItemGroup>
   <ItemGroup>

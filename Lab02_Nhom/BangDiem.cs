@@ -42,6 +42,7 @@ namespace Lab02_Nhom
             if (dataGridView1.Columns[e.ColumnIndex].DataPropertyName == "DIEMTHI")
             {
                 var value = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
+                Global_Support.hashPass = Global_Support.Mk;
                 if (value != null && value.GetType() == typeof(byte[]))
                 {
                     var byteValue = (byte[])value;
@@ -148,7 +149,7 @@ namespace Lab02_Nhom
             string fullPath = filePath + "/" + fileName;
             RSAParameters publickey = new RSAParameters();
             RSAParameters privatekey = new RSAParameters();
-            RSA512.ReadKeysFromFile(fullPath, out privatekey, out publickey);
+            RSA512.ReadKeysFromFile(fullPath,Global_Support.Mk, out privatekey, out publickey);
             byte[] byteDiem = rsa512.RSAEncrypt(strDiem, publickey);
 
             parMaSV.Value = masv;
@@ -192,7 +193,7 @@ namespace Lab02_Nhom
             string fullPath = filePath + "/" + fileName;
             RSAParameters publickey = new RSAParameters();
             RSAParameters privatekey = new RSAParameters();
-            RSA512.ReadKeysFromFile(fullPath, out privatekey, out publickey);
+            RSA512.ReadKeysFromFile(fullPath, Global_Support.Mk, out privatekey, out publickey);
             byte[] byteDiem = rsa512.RSAEncrypt(strDiem, publickey);
             strDiem="0x"+BitConverter.ToString(byteDiem).Replace("-","");
             SqlCommand cmd = new SqlCommand();

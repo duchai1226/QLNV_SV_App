@@ -15,6 +15,7 @@ namespace Lab02_Nhom
         public static string MaNV { get; set; }
         public static string Mk { get; set; }
         public static string strCon { get; set;}
+        public static string hashPass { get; set;}
     public static void OpenSQL(SqlConnection sqlCon)
         {
             if (sqlCon == null)
